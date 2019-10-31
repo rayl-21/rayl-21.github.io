@@ -64,10 +64,10 @@ minima:
 header_pages:
   - name : about.md
     title : About Page
-    url : /about
+    url : /yaght-demo/about
   - name : changelog.md
     title : Changelog
-    url : /changelog
+    url : /yaght-demo/changelog
   - name : external.md
     title : External Page
     url : https://jekyllrb.com/
