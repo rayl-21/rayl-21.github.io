@@ -62,13 +62,13 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-  - name : about.md
-    title : About Page
+  - name : about
+    title : About
     url : /yaght-demo/about
-  - name : changelog.md
-    title : Changelog
-    url : /yaght-demo/changelog
-  - name : external.md
+  - name : templates
+    title : Templates
+    url : /yaght-demo/templates
+  - name : external
     title : External Page
     url : https://jekyllrb.com/
 

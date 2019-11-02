@@ -1,12 +1,11 @@
 ---
 layout: project
-title: Project
-permalink: /project/
+title: Project Page Template
 ---
 
-Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+This template integrates with Github to show project links and data. You can see the three links to project source, issues, and the Latest Release.
 
-[Here is a link](#)
+[Here is a button](#){:.button .medium .center target="_blank"}
 
 ## Headings
 
