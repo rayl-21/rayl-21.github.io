@@ -70,7 +70,7 @@ header_pages:
     url : /yaght-demo/templates
   - name : external
     title : External Page
-    url : https://jekyllrb.com/
+    url : https://www.chrishasz.com/yaght/
 
 # blog settings
 permalink: "/blog/:year/:month/:day/:title"
