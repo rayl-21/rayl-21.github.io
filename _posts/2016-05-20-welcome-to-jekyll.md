@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: foo, bar
+categories: [foo, bar]
 title: "Welcome to Jekyll"
 ---
 
