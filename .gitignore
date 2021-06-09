@@ -1,9 +1,12 @@
-# Jekyll
+# jekyll related files and folders
 _site/
+.bundle
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
+*.gem
+vendor/
 
-# IDE
+# vscode related folders
 .vscode/
