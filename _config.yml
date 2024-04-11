@@ -1,8 +1,8 @@
 #SEO Tagging [jekyll-seo-tag]
-title: Your awesome title
+title: Ray Li
 subtitle: Your awesome subtitle
-author: GitHub User
-email: your-email@domain.com
+author: Ray Li
+email: m519160201@gmail.com
 description: > # this means to ignore newlines until the next configuration section
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -38,14 +38,14 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
+    # twitter: jekyllrb
+    github:  rayl-21
     # rss: rss
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    linkedin: parkr
+    linkedin: ray-li-4b0a9293
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
