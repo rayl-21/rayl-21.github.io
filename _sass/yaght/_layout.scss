@@ -1,0 +1,281 @@
+body {
+  border-top: 15px solid $brand-color;
+  min-height: 98vh;
+
+  //font-family: "Quicksand", Arial, sans-serif;
+}
+
+.page-content{
+  padding: 0;
+}
+
+/************************ Site Header ***********************/
+.site-header{
+  background-color: $grey-color-light;
+  border-top: none;
+  line-height: 75px;
+
+  label[for="nav-trigger"] {
+    padding-top: 20px;
+  }
+
+  .site-nav{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: static;
+    text-align: left;
+    top: 18px;
+
+    .page-link{
+      margin-left: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .site-image{
+    padding-right: 35px;
+    float: left;
+
+    img{
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .trigger > a{
+    border-top: 1px solid $grey-color;
+  }
+}
+
+aside {
+  background-color: $grey-color-light;
+  bottom: 0;
+  display: table-cell;
+  margin: 0 auto;
+  padding: 30px 20px 20px 20px;
+  top: 15px;
+  width: 260px;
+
+  ul{
+    list-style-type: none;
+    margin-left: 0;
+
+    li{
+      padding-top: 10px;
+      text-align: center;
+
+      a{
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .site-title{
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+  }
+
+  &.sidebar{
+
+    #left-nav, .table-of-contents{
+      display: table-cell;
+
+      a {
+        color: $brand-color;
+
+        &:hover {
+          color: $brand-color;
+        }
+
+        &:visited {
+          color: $brand-color;
+        }
+      }
+    }
+
+    .sidebar-heading{
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+  .social-links{
+    margin-top: 30px;
+  }
+}
+
+#page-banner{
+  background-color: $brand-color;
+  width: 100%;
+  min-width: 400px;
+  overflow: hidden;
+  position: relative;
+
+  .color-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(32,26,22,.7);
+    z-index: 99;
+  }
+
+  .header{
+    color: #fff;
+    font-size: 78px;
+    z-index: 100;
+    text-align:center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
+/************************** left-nav ************************/
+#left-nav ~ .post{
+  display: table-cell;
+  max-width: 780px;
+
+  @include media-query($on-palm) {
+    display: block;
+  }
+}
+
+#left-nav, .table-of-contents{
+  display:table-cell;
+  min-width: 280px;
+
+  a{
+    color: $anchor-color;
+
+    &:hover{
+      color: $anchor-color-hover
+    }
+
+    &:visited {
+      color: $anchor-color-visited;
+    }
+  }
+
+  h3{
+    margin-left: 20px;
+  }
+
+  ul{
+    list-style: none;
+    margin: 0;
+
+    li{
+      padding-bottom: 10px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+ }
+
+.home{
+  background-color: #fff;
+  display: table-cell;
+  margin-left: 320px;
+  padding-left: 30px;
+}
+
+
+/*************************** Blog ***************************/
+.pagination{
+  text-align: center;
+}
+
+/*************************** Posts **************************/
+
+.post-header {
+  margin-bottom: $spacing-unit;
+  margin-top: $spacing-unit;
+}
+
+/************************ Project Page **********************/
+
+.project-header{
+  margin-top: 15px;
+}
+
+.project-detail-list{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 35px 0;
+
+  .project-detail-item{
+    border-bottom: 2px solid $brand-color;
+    height: 150px;
+    width: 150px;
+  }
+
+  a{
+    display:block;
+  }
+
+  .circle{
+    background-color: $grey-color;
+    width: 100px;
+    height: 100px;
+  }
+
+  span{
+    color: $brand-color;
+    display: block;
+    text-align: center;
+  }
+
+  svg{
+    fill: $brand-color;
+    padding: 15px;
+  }
+}
+
+/************************ RESPOND **********************/
+@include media-query($on-palm) {
+  aside{
+      display: none;
+  }
+
+  .home{
+    margin-left: 0;
+  }
+
+  .site-header{
+    display: block;
+  }
+
+  .site-footer{
+    display: block;
+  }
+
+  .project-detail-list{
+    .project-detail-item{
+      border-bottom: 2px solid $brand-color;
+      height: 100px;
+      font-size: .9em;
+      width: 100px;
+
+      svg{
+        padding: 5px;
+      }
+    }
+  }
+
+  #page-banner{
+
+    .header{
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+$brand-color:           #636a68 !default;
+$orange-color:          #f66a0a !default;
+$table-text-align:        left !default;
+
+// Width of the content area
+$content-width:           1100px !default;
+
+$on-palm:                 600px !default;
+$on-laptop:               1100px !default;
+
+$on-medium:               $on-palm !default;
+$on-large:                $on-laptop !default;
+
+// Custom Properties
+$anchor-color:          #007891 !default;
+$anchor-color-hover:      lighten($anchor-color, 25%) !default;
+$anchor-color-visited:    lighten($anchor-color, 5%);
+$button-color:          #007891 !default;

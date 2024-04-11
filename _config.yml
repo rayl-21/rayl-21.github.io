@@ -40,7 +40,7 @@ minima:
   social_links:
     twitter: jekyllrb
     github:  jekyll
-    rss: rss
+    # rss: rss
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
@@ -65,13 +65,13 @@ minima:
 header_pages:
   - name : about
     title : About
-    url : /yaght-demo/about
+    url : /about
   - name : blog
     title : Blog
-    url : /yaght-demo/blog
+    url : /blog
   - name : templates
     title : Templates
-    url : /yaght-demo/templates
+    url : /templates
   - name : external
     title : External Page
     url : https://www.chrishasz.com/yaght/
@@ -84,8 +84,14 @@ paginate_path: "/blog/page:num/"
 
 
 # technical settings
-baseurl: "/yaght-demo" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-remote_theme: chrishasz/yaght
+# remote_theme: chrishasz/yaght
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-avatar
+  - jekyll-octicons

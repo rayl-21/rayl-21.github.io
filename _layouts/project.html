@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div id="page-banner">
+  {%- if page.image -%}
+  <div class="color-overlay"></div>
+  <img src="{{ page.image }}" alt="{{ page.header }}"/>
+  <div class="header absolute">{{ page.header }}</div>
+  {%- else -%}
+  <div class="header">{{ page.header }}</div>
+  {%- endif -%}
+
+</div>
+<article class="project">
+
+  <div class="project-detail-list">
+    <a href="{{site.github.repository_url | default: page.url}}" target="_blank" rel="noopener">
+      <div class="project-detail-item call-out-box">
+        {% octicon code height:50 class:"right left" aria-label:Code %}
+        <span>Code</span>
+      </div>
+    </a>
+    <a href="{{site.github.issues_url | default: page.url}}" target="_blank" rel="noopener">
+      <div class="project-detail-item call-out-box">
+        {% octicon issue-opened height:50 class:"right left" aria-label:Issues %}
+        <span>Issues</span>
+      </div>
+    </a>
+    <a href="{{site.github.latest_release.html_url | default: page.html_url}}" target="_blank" rel="noopener">
+      <div class="project-detail-item call-out-box">
+        {% octicon tag height:52 class:"right left" aria-label:Release %}
+        <span>Latest Release</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+</article>
